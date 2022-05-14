@@ -1,4 +1,4 @@
 import ROUTE_PATH from "./paths";
-import { AppRoutes, AuthRoutes } from "./list";
+import { AppRoutes } from "./list";
 
-export { ROUTE_PATH, AppRoutes, AuthRoutes };
+export { ROUTE_PATH, AppRoutes };

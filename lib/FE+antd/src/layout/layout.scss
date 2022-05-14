@@ -1,0 +1,229 @@
+@import "../assets/css/variables.scss";
+
+.main-layout {
+  height: 100vh;
+
+  .ant-layout-sider {
+    background-color: $new-primary-color;
+    overflow-y: auto;
+    z-index: 1;
+
+    .collapsed-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 4.6875rem;
+      padding: 0 0.3125rem;
+      background: $white;
+
+      .ant-image {
+        width: 4.375rem;
+        cursor: pointer;
+      }
+
+      .logo-title {
+        display: none;
+      }
+    }
+
+    .layout-main-logo {
+      display: flex;
+      align-items: center;
+      height: 4.6875rem;
+      background: $white;
+      padding: 0 0.375rem;
+
+      .ant-image {
+        width: 4.875rem;
+        cursor: pointer;
+      }
+
+      .logo-title {
+        display: flex;
+        padding-left: 0.6875rem;
+        cursor: pointer;
+
+        span {
+          font-size: 1.25rem;
+          font-weight: bold;
+          color: $black-color;
+          line-height: 1.875rem;
+        }
+      }
+    }
+
+    .ant-menu {
+      // menu-item
+      background: $new-primary-color;
+      opacity: 1;
+      padding: 0 0.325rem;
+
+      .ant-menu-item {
+        height: 2.8125rem;
+        line-height: 2.8125rem;
+        display: flex;
+        align-items: center;
+
+        .menu-title {
+          line-height: normal;
+
+          &:hover {
+            color: $white;
+          }
+        }
+
+        &:hover {
+          background: $btn-bg-color;
+          color: $white;
+          border-radius: 0.25rem;
+        }
+      }
+
+      .active-menu {
+        background-color: $btn-bg-color !important;
+        color: $white !important;
+        border-radius: 0.25rem;
+
+        .menu-title {
+          color: $white !important;
+        }
+      }
+
+      .ant-menu-submenu-vertical {
+        .ant-menu-submenu-title {
+          svg + span {
+            opacity: 0;
+          }
+        }
+      }
+
+      .ant-menu-submenu {
+        font-size: 14px;
+        flex-direction: column;
+
+        .ant-menu-submenu-title {
+          height: 45px;
+          line-height: 45px;
+
+          &:hover {
+            color: $white;
+          }
+
+          .ant-menu-submenu-arrow:after,
+          .ant-menu-submenu-arrow:before {
+            background: $white !important;
+          }
+
+          svg + span {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .ant-menu-submenu-open {
+        background: $blue-shade;
+
+        .ant-menu-submenu-title {
+          color: $white !important;
+          background-color: $btn-bg-color;
+          border-radius: 0.25rem;
+
+          &:hover {
+            color: $white !important;
+            background-color: $btn-bg-color !important;
+          }
+
+          .ant-menu-submenu-arrow:after,
+          .ant-menu-submenu-arrow:before {
+            background: $white !important;
+          }
+        }
+
+        .ant-menu-sub {
+          background: $blue-shade;
+          padding: 0;
+
+          .ant-menu-item {
+            padding-left: 24px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .site-layout {
+    .main-header {
+      height: 4.6875rem;
+      line-height: normal;
+      width: 100%;
+      background: $white;
+      display: flex;
+      padding: 0 1rem 0 0.5rem;
+      align-items: center;
+
+      .collapsed-button,
+      .collapsed-button-none {
+        span {
+          svg {
+            fill: $new-primary-color;
+          }
+        }
+      }
+    }
+
+    .main-content {
+      background: $main-content;
+      overflow: auto;
+      padding: 1.5rem;
+      min-height: 17.5rem;
+    }
+
+    .anticon[tabindex] {
+      font-size: x-large;
+      margin-left: 0.625rem;
+      vertical-align: middle;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-layout {
+    .open-menu {
+      position: absolute !important;
+      z-index: 99 !important;
+      height: 100vh !important;
+      flex: 0 0 14.375rem !important;
+      max-width: 14.375rem !important;
+      min-width: 14.375rem !important;
+      width: 14.375rem !important;
+    }
+  }
+
+  .collapsed-button {
+    margin-left: unset !important;
+  }
+
+  .collapsed-button-none {
+    margin-left: 0 !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main-layout {
+    .open-menu {
+      position: absolute;
+      z-index: 99;
+      height: 100vh;
+    }
+
+    .collapsed-menu {
+      display: none;
+    }
+  }
+
+  .collapsed-button {
+    margin-left: 14.8rem;
+  }
+
+  .collapsed-button-none {
+    margin-left: 0 !important;
+  }
+}

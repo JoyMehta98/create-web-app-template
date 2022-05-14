@@ -1,0 +1,86 @@
+// Add-restaurant-scss
+.add-restaurant-card {
+  .image-box {
+    height: 100%;
+    min-height: 8.125rem;
+
+    .upload-container {
+      height: 100%;
+
+      .restaurant-image-upload {
+        display: unset;
+
+        .ant-upload-list {
+          position: relative;
+          display: flex;
+          gap: 0.625rem;
+          flex-wrap: wrap;
+
+          .ant-upload-list-picture-card-container {
+            width: 100%;
+            max-width: 8.75rem;
+
+            &:first-child {
+              margin-left: 9.4rem;
+            }
+          }
+
+          .ant-upload-select-picture-card {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            max-width: 8.75rem;
+
+            .upload-cox-card {
+              .anticon-cloud-upload {
+                svg {
+                  font-size: 2rem;
+                }
+              }
+
+              .upload-title {
+                font-size: 1rem;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .opening-hours-container {
+    .title {
+      margin-bottom: 0.3125rem;
+
+      .ant-typography {
+        color: #495057;
+        font-size: 0.875rem;
+      }
+    }
+
+    .open-hours-main-div {
+      display: flex;
+      margin-top: 1rem;
+      @media screen and (max-width: 480px) {
+        flex-wrap: wrap;
+      }
+
+      .days-title {
+        width: 100%;
+        max-width: 200px;
+      }
+
+      .hours-select {
+        width: 100%;
+
+        .ant-space-item {
+          width: 100%;
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}

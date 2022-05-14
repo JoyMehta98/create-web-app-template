@@ -1,0 +1,16 @@
+.room-info-model {
+  width: 900px !important;
+
+  .ant-modal-body {
+    .room-floor-select {
+      width: 100%;
+    }
+
+    .text-area {
+      .room-description {
+        height: 100%;
+        min-height: 300px;
+      }
+    }
+  }
+}

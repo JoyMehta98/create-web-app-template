@@ -1,0 +1,37 @@
+@import "~antd/dist/antd.css";
+@import "./_variables.scss";
+@import "./common.scss";
+
+@font-face {
+  font-family: Verdana;
+  src: local("Verdana"), url("../../fonts/verdana.ttf") format("truetype");
+  font-weight: normal;
+}
+
+body {
+  font-family: Verdana;
+
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+::selection {
+  background: $primary-gray-color;
+}
+
+.search-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .ant-space-item {
+    .ant-btn {
+      padding: 1rem 2.5rem;
+    }
+  }
+}

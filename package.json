@@ -4,6 +4,7 @@
   "description": "Set your repo for FE and BE",
   "author": "JOY <joymehta1998@gmail.com>",
   "main": "bin/cli.js",
+  "type": "module",
   "bin": {
     "kick-start": "bin/cli.js"
   },
@@ -18,13 +19,6 @@
     "inquirer": "^8.2.4",
     "ncp": "^2.0.0",
     "ora": "^6.1.0"
-  },
-  "devDependencies": {
-    "@types/edit-json-file": "^1.7.0",
-    "@types/inquirer": "^8.2.1",
-    "@types/ncp": "^2.0.5",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.4"
   },
   "private": "true",
   "repository": {

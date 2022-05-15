@@ -2,8 +2,12 @@ import { Select as AntdSelect, SelectProps } from "antd";
 
 const { Option } = AntdSelect;
 
+interface OptionList {
+  value: string;
+  label: string;
+}
 interface Props extends SelectProps {
-  optionList: { value: string; label: string }[];
+  optionList: OptionList[];
 }
 
 const Select = (props: Props) => {

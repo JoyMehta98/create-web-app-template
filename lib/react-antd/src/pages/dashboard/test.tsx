@@ -1,4 +1,4 @@
-import { screen, render } from "@testing-library/dom";
+import { screen, render } from "@testing-library/react";
 import Dashboard from ".";
 
 const renderComponent = () => render(<Dashboard />);

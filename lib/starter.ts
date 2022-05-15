@@ -32,14 +32,13 @@ const createProject = async (projectName) => {
     const isUpdated = await dependenciesUpdates()
     const isDeduped = await dependenciesDeduped()
 
-    console.log('[ 1 / 3 ] 🔍  copying project...')
-    console.log('[ 2 / 3 ] 🚚  fetching node_modules...')
+    console.log('[1/3] copying project...')
+    console.log('[2/3] fetching node_modules...')
 
     await copyProjectFiles(projectName, template)
     await updatePackageJson(projectName)
 
-    console.log('[ 3 / 3 ] 🔗  linking node_modules...')
-    console.log('\u001b[2m──────────────────────────────────────────\u001b[22m')
+    console.log('[3/3] linking node_modules...')
 
     spinner = ora()
     spinner.start()
@@ -47,6 +46,8 @@ const createProject = async (projectName) => {
     await installNodeModules(projectName, spinner)
     isUpdated && (await updateNodeModules(projectName, spinner))
     isDeduped && (await dedupeNodeModules(projectName, spinner))
+
+    console.log('[3/3] initializing git...')
 
     await createGitignore(projectName, spinner)
     await initGit(projectName)

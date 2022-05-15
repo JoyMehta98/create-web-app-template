@@ -1,0 +1,32 @@
+{
+  "name": "set-repo",
+  "version": "1.0.0",
+  "description": "Set your repo for FE and BE",
+  "author": "JOY <joymehta1998@gmail.com>",
+  "main": "bin/cli.js",
+  "type": "module",
+  "bin": {
+    "kick-start": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "child_process": "^1.0.2",
+    "edit-json-file": "^1.7.0",
+    "gitignore": "^0.7.0",
+    "inquirer": "^8.2.4",
+    "ncp": "^2.0.0",
+    "ora": "^6.1.0"
+  },
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoyMehta98/set-repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JoyMehta98/set-repo/issues"
+  },
+  "homepage": "https://github.com/JoyMehta98/set-repo#readme"
+}

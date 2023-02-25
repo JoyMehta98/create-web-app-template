@@ -1,5 +1,5 @@
 {
-  "name": "@web/create-template",
+  "name": "create-web-app-template",
   "version": "1.0.0",
   "description": "Set your repo for FE",
   "author": "Joy",
@@ -22,10 +22,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JoyMehta98/Start-Project.git"
+    "url": "git+https://github.com/JoyMehta98/Start-Project.git"
   },
   "bugs": {
     "url": "https://github.com/JoyMehta98/Start-Project/issues"
   },
-  "homepage": "https://github.com/JoyMehta98/Start-Project#readme"
+  "homepage": "https://github.com/JoyMehta98/Start-Project#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "react",
+    "material",
+    "ui",
+    "mui",
+    "ant",
+    "design",
+    "antd",
+    "template",
+    "boilerplate",
+    "basic"
+  ],
+  "license": "ISC"
 }

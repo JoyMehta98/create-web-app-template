@@ -1,8 +1,8 @@
 {
-  "name": "set-repo",
+  "name": "create-react-template",
   "version": "1.0.0",
-  "description": "Set your repo for FE and BE",
-  "author": "JOY <joymehta1998@gmail.com>",
+  "description": "Set your repo for FE",
+  "author": "Joy",
   "main": "bin/cli.js",
   "type": "module",
   "bin": {

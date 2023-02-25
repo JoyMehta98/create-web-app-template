@@ -7,7 +7,7 @@ Works on macOS, Windows, and Linux. Creates all the boilerplate code along with 
 # Usage
 
 ```
-npx create-react-template my-app
+npx create-web-app-template my-app
 cd my-app
 npm start
 ```

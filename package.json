@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoyMehta98/Start-Project.git"
+    "url": "git+https://github.com/JoyMehta98/create-web-app-template.git"
   },
   "bugs": {
-    "url": "https://github.com/JoyMehta98/Start-Project/issues"
+    "url": "https://github.com/JoyMehta98/create-web-app-template/issues"
   },
-  "homepage": "https://github.com/JoyMehta98/Start-Project#readme",
+  "homepage": "https://github.com/JoyMehta98/create-web-app-template#readme",
   "directories": {
     "lib": "lib"
   },

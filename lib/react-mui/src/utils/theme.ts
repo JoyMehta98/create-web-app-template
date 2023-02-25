@@ -1,38 +1,36 @@
 import { createTheme } from "@mui/material/styles";
-import { colors, fontSize } from "constants/styles";
+import { Colors } from "constants/styles";
 
-const theme = createTheme({
+export const theme = createTheme({
   palette: {
     primary: {
-      main: colors.primary,
+      main: Colors.primary,
     },
     secondary: {
-      main: colors.secondary,
+      main: Colors.secondary,
     },
     error: {
-      main: colors.error,
+      main: Colors.error,
     },
     background: {
-      default: colors.white,
+      default: Colors.white,
     },
     grey: {
-      50: colors.gray50,
-      300: colors.gray300,
-      500: colors.lightGrayishGreen,
+      50: Colors.gray50,
+      300: Colors.gray300,
+      500: Colors.lightGrayishGreen,
     },
     common: {
-      black: colors.black,
-      white: colors.white,
+      black: Colors.black,
+      white: Colors.white,
     },
     text: {
-      primary: colors.textPrimary,
+      primary: Colors.textPrimary,
     },
-    divider: colors.dividerPrimary,
+    divider: Colors.dividerPrimary,
   },
   typography: {
-    htmlFontSize: fontSize.fontSizeBase,
+    htmlFontSize: 14,
     fontFamily: "Verdana",
   },
 });
-
-export default theme;

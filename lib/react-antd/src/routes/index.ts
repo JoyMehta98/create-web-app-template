@@ -1,4 +1,4 @@
-import ROUTE_PATH from "./paths";
-import AppRoutes from "./AppRoutes";
+import { RoutePaths } from "./paths";
+import { AppRoutes } from "./AppRoutes";
 
-export { ROUTE_PATH, AppRoutes };
+export { RoutePaths, AppRoutes };

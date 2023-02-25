@@ -1,5 +1,3 @@
-const ROUTE_PATH = {
-  dashboard: "/dashboard"
+export const RoutePaths = {
+  dashboard: "/"
 };
-
-export default ROUTE_PATH;

@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles({
+export const useStyles = makeStyles({
   root: {
     "&.MuiButton-root": {
       lineHeight: "normal",
@@ -15,5 +15,3 @@ const useStyles = makeStyles({
     },
   },
 });
-
-export default useStyles;

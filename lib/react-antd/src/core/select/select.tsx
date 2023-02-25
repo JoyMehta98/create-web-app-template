@@ -10,7 +10,7 @@ interface Props extends SelectProps {
   optionList: OptionList[];
 }
 
-const Select = (props: Props) => {
+export const Select = (props: Props) => {
   const { optionList, ...rest } = props;
 
   return (
@@ -23,5 +23,3 @@ const Select = (props: Props) => {
     </AntdSelect>
   );
 };
-
-export default Select;

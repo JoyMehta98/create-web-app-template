@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
-const useStyle = makeStyles({
+export const useStyle = makeStyles({
   root: {
     "&.MuiPaper-root": {
       padding: "0",
@@ -14,5 +14,3 @@ const useStyle = makeStyles({
     paddingBottom: "16px !important",
   },
 });
-
-export default useStyle;

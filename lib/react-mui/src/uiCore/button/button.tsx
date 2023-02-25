@@ -1,7 +1,7 @@
 import { Button as MuiButton, ButtonProps } from "@mui/material";
-import useStyles from "./style";
+import { useStyles } from "./style";
 
-const Button = ({
+export const Button = ({
   variant,
   onClick,
   children,
@@ -26,5 +26,3 @@ const Button = ({
     </MuiButton>
   );
 };
-
-export default Button;

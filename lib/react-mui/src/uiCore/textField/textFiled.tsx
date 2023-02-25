@@ -1,7 +1,7 @@
 import { TextField as MuiTextField, TextFieldProps } from "@mui/material";
-import useStyle from "./style";
+import { useStyle } from "./style";
 
-const TextField = ({
+export const TextField = ({
   className,
   variant,
   disabled,
@@ -36,5 +36,3 @@ const TextField = ({
     </div>
   );
 };
-
-export default TextField;

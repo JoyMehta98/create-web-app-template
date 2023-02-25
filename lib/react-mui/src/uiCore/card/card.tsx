@@ -7,7 +7,7 @@ import {
   CardProps,
 } from "@mui/material";
 import { Divider } from "uiCore";
-import useStyle from "./style";
+import { useStyle } from "./style";
 
 interface Props extends CardProps {
   extra?: ReactNode;
@@ -16,7 +16,7 @@ interface Props extends CardProps {
   footer?: ReactNode;
 }
 
-const Card = ({
+export const Card = ({
   variant,
   children,
   className,
@@ -43,5 +43,3 @@ const Card = ({
     </MuiCard>
   );
 };
-
-export default Card;

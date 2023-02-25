@@ -1,7 +1,13 @@
 import { Avatar as MuiAvatar, AvatarProps } from "@mui/material";
-import useStyle from "./style";
+import { useStyle } from "./style";
 
-const Avatar = ({ className, src, alt, children, variant }: AvatarProps) => {
+export const Avatar = ({
+  className,
+  src,
+  alt,
+  children,
+  variant,
+}: AvatarProps) => {
   const classes = useStyle();
 
   return (
@@ -15,5 +21,3 @@ const Avatar = ({ className, src, alt, children, variant }: AvatarProps) => {
     </MuiAvatar>
   );
 };
-
-export default Avatar;

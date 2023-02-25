@@ -5,7 +5,7 @@ import { AppRoutes } from "routes";
 import theme from "utils/theme";
 import "./assets/css/app.scss";
 
-const App = () => (
+export const App = () => (
   <BrowserRouter>
     <Suspense fallback>
       <ThemeProvider theme={theme}>
@@ -14,5 +14,3 @@ const App = () => (
     </Suspense>
   </BrowserRouter>
 );
-
-export default App;

@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
-const useStyle = makeStyles({
+export const useStyle = makeStyles({
   root: {
     "&.MuiAvatar-root": {
       width: "100%",
@@ -10,5 +10,3 @@ const useStyle = makeStyles({
     },
   },
 });
-
-export default useStyle;

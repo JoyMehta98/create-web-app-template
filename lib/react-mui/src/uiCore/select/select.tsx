@@ -1,12 +1,12 @@
 import { Select as MuiSelect, SelectProps } from "@mui/material";
 import { MenuItem } from "uiCore";
-import useStyle from "./style";
+import { useStyle } from "./style";
 
 interface Props {
   optionList: { value: string; label: string }[];
 }
 
-const Select = ({
+export const Select = ({
   className,
   disabled,
   placeholder,
@@ -34,7 +34,7 @@ const Select = ({
         multiple={multiple}
       >
         {optionList.map((item) => (
-          <MenuItem key={`${item.value}`} value={item.value}>
+          <MenuItem key={item.value} value={item.value}>
             {item.label}
           </MenuItem>
         ))}
@@ -42,5 +42,3 @@ const Select = ({
     </div>
   );
 };
-
-export default Select;

@@ -1,12 +1,12 @@
 {
   "name": "create-web-app-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Set your repo for FE",
   "author": "Joy",
   "main": "bin/cli.js",
   "type": "module",
   "bin": {
-    "kick-start": "bin/cli.js"
+    "create-web-app-template": "bin/cli.js"
   },
   "scripts": {
     "start": "node bin/cli.js"
@@ -33,11 +33,9 @@
   },
   "keywords": [
     "react",
-    "material",
-    "ui",
+    "material ui",
     "mui",
-    "ant",
-    "design",
+    "ant design",
     "antd",
     "template",
     "boilerplate",

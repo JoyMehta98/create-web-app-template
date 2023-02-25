@@ -1,3 +1,3 @@
 export const RoutePath = {
-  dashboard: "/dashboard",
+  dashboard: "/",
 };

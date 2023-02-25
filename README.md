@@ -12,8 +12,6 @@ cd my-app
 npm start
 ```
 
-You can also install create-react-template globally and use it to create a template anywhere in your system.
-
 After running npm start, go to http://localhost:3000 to see a simple page(3000 here being the port number, you can change this in the .env file) You should see `Dashboard` text and start implementing in the same pattern.
 
 # Templates

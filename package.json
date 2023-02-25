@@ -1,6 +1,6 @@
 {
   "name": "create-web-app-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set your repo for FE",
   "author": "Joy",
   "main": "bin/cli.js",
